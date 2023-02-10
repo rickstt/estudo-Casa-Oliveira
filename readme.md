@@ -41,15 +41,15 @@ Com a intenção de aumentar o negócio, Roberto está disposto a informatizar s
 
 #### Gestão de patrimônio
 
-•	informação_patrimonio (idpatrimonio, codigopatrimonio, valorpatrimonio, nome, decricao, setor_pertencente, data_aquisicao, setor_responsavel, data_baixa);
+•	Informação patrimônio (idpatrimonio, codigopatrimonio, valorpatrimonio, nome, decricao, setor_pertencente, data_aquisicao, setor_responsavel, data_baixa);
 
 #### Setor de compras
 
-•	informação_compras (idcompra, funcionario, valor_pag_produto, fornecedor, data_compra, numero_nota_fiscal, nome_produto, descricao, consumivel, quantidade, setor_destino);
+•	Informação compras (idcompra, funcionario, valor_pag_produto, fornecedor, data_compra, numero_nota_fiscal, nome_produto, descricao, consumivel, quantidade, setor_destino);
 
 #### Setor financeiro
 
-•	informacao_financeiro (idfinanceiro, despesas, lucro, disponibilidade_cofre, valor, tipo_valor, descricao, data_operacao, identficacao_responsavel);
+•	Informação financeiro (idfinanceiro, despesas, lucro, disponibilidade_cofre, valor, tipo_valor, descricao, data_operacao, identficacao_responsavel);
 
 # MODELAGEM CONCEITUAL
 !['Diagrama do modelo conceitual'](./modeloconceitual.png)
