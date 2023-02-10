@@ -27,28 +27,29 @@ Com a intenção de aumentar o negócio, Roberto está disposto a informatizar s
 •	Setor de compras;
 •	Setor financeiro;
 
-#### Gestão do estoque
+### Gestão do estoque
 
 •	Informações sobre os produtos (validade, preco, lote, nome, descricao, marca, idproduto, categoria, fornecedor);
+
 •	Volume de produtos em estoque (quantidade_atual, quantidade_lote, ultima_movimentacao, quantidade_minima, quantidade_maxima, idproduto);
 
-#### Funcionário
+### Funcionário
 
-•	Informações (nome, função | cargo, salario, matricula, cpf, rg, telefone, email, estado civil, admissão, data nascimento, endereço, usuário, senha, idfuncionario);
+•	Informações (nome, funcao | cargo, salario, matricula, cpf, rg, telefone, email, estado_civil, admissao, data nascimento, endereco, usuario, senha, idfuncionario);
 
-#### Fluxo de caixa
+### Fluxo de caixa
 
 •	forma_pagamento, limite_sangria, valor (Entrada | Saída), registro_venda;
 
-#### Gestão de patrimônio
+### Gestão de patrimônio
 
 •	Informação patrimônio (idpatrimonio, codigopatrimonio, valorpatrimonio, nome, decricao, setor_pertencente, data_aquisicao, setor_responsavel, data_baixa);
 
-#### Setor de compras
+### Setor de compras
 
 •	Informação compras (idcompra, funcionario, valor_pag_produto, fornecedor, data_compra, numero_nota_fiscal, nome_produto, descricao, consumivel, quantidade, setor_destino);
 
-#### Setor financeiro
+### Setor financeiro
 
 •	Informação financeiro (idfinanceiro, despesas, lucro, disponibilidade_cofre, valor, tipo_valor, descricao, data_operacao, identficacao_responsavel);
 
