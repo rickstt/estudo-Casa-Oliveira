@@ -53,6 +53,12 @@ Com a intenção de aumentar o negócio, Roberto está disposto a informatizar s
 
 •	Informação financeiro (idfinanceiro, despesas, lucro, disponibilidade_cofre, valor, tipo_valor, descricao, data_operacao, identficacao_responsavel);
 
-# MODELAGEM CONCEITUAL
+# MODELO CONCEITUAL
 !['Diagrama do modelo conceitual'](./modeloconceitual.png)
 https://drive.google.com/file/d/1A5nfjsi9rKib3gqFu358jS-_sYdz97zr/view?usp=sharing
+
+
+
+# MODELO LÓGICO
+!['Diagrama do modelo lógico de estoque'](./modelologico.png)
+https://drive.google.com/file/d/1h4OfDsoyJ0Wty4AnYiUPnYUkDsmUr5E9/view?usp=sharing
