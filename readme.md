@@ -69,7 +69,7 @@ https://drive.google.com/file/d/1h4OfDsoyJ0Wty4AnYiUPnYUkDsmUr5E9/view?usp=shari
 ```
 /*
 Para o projeto de banco de dados da casa oliveira, será criado, uma estrutura física com os comandos SQL(Structure Query Language).
-Iremos começar com o comando de criação de bamnco de dados. Este comando pertence a categoria de comandos DDL(Data definition Language).
+Iremos começar com o comando de criação de banco de dados. Este comando pertence a categoria de comandos DDL(Data definition Language).
 Comando:
 	CREATE DATABASE nome_do_banco -> CREATE DATABASE casaoliveira
 */
@@ -88,7 +88,7 @@ USE casaoliveira;
 ```
 ```
 /*
-Criação das entidades em modo físico usando os comandos sSQL. Para criar uma tabela(entidade), usaremos o comando:
+Criação das entidades em modo físico usando os comandos SQL. Para criar uma tabela(entidade), usaremos o comando:
 CREATE TABLE nome_tabela seguido por parenteses e os atributos(campos) da tabela, bem como, a sua tipificação, 
 ou seja, devemos dizer qual tipo de dado que cada campo(atributo) da tabela deve receber, EX.:
 o campo idade deve receber valores numéricos e, portanto, será definido como int(inteiro).
@@ -105,7 +105,7 @@ Vamos criar a tabela de produtos. Esta tabela possui os seguintes campos:
 ```
 ```  
 Para o campo descrição usaremos o tipo de dado text. Com este tipo podemos inserir até 64 mil caracteres. 
-Como neste campo pode haver a possibilidade de uma descrição longa do produto, se faz nhecessário um tamanho maior.
+Como neste campo pode haver a possibilidade de uma descrição longa do produto, se faz necessário um tamanho maior.
 ```
 ```
 Para o campo fornecedor iremos usar o tipo de dado VARCHAR, este tipo de dado nos permite inserir textos mas com um limite
@@ -115,7 +115,7 @@ que pode ser pré-definido pelo usuário ou podemos utilizar o limite total de 2
 Para o campo validade, iremos utilizar o tipo de dado DATE.
 ```
 ```
-Para o campo de lote, será definido o tipo de dado CARCHAR, pois há a possibilidade de o valor conter caracteres alfadecimais.
+Para o campo de lote, será definido o tipo de dado VARCHAR, pois há a possibilidade de o valor conter caracteres alfanumérico.
 Sendo assim o VARCHAR é uma ótima opção por aceitar valores diversos.
 ```
 ```
@@ -151,3 +151,16 @@ ultima_movimentacao date,
 qtdLote int
 );
 ```
+```
+/*
+A seguir vamos realizar nossa relação entre as tabelas, ligando as tabelas estoque à produto e também referenciando
+e indicando as colunas do idProduto.
+*/
+ALTER TABLE `casaoliveira`.`estoque` 
+ADD CONSTRAINT `fk_estoque_pk_produto`
+  FOREIGN KEY (`idProduto`)
+  REFERENCES `casaoliveira`.`produto` (`idProduto`)
+```
+
+## Modelo Físico - MER(Modelo de Entidade Relacional)
+!['Diagrama do Modelo  de Entidadde Relacional'](./modelofisico.png)
